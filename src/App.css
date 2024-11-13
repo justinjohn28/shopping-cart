@@ -1,0 +1,165 @@
+/* General Layout */
+.container {
+  display: flex;
+  justify-content: space-between;
+  padding: 30px;
+  background: linear-gradient(135deg, #f8f8f8, #e2e2e2);
+  min-height: 100vh;
+}
+
+.product-list,
+.cart {
+  background-color: #ffffff;
+  border-radius: 15px;
+  padding: 20px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+}
+
+.product-list:hover,
+.cart:hover {
+  transform: translateY(-10px);
+}
+
+.product-list {
+  width: 60%;
+}
+
+.cart {
+  width: 35%;
+}
+
+/* Product List */
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.product-item {
+  background-color: #fff;
+  border-radius: 12px;
+  padding: 15px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.product-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.product-item img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  margin-bottom: 15px;
+  object-fit: cover;
+}
+
+.product-item h4 {
+  font-size: 1.1rem;
+  margin: 15px 0;
+  font-weight: 600;
+  color: #333;
+}
+
+.product-item p {
+  font-size: 0.95rem;
+  color: #777;
+  margin-bottom: 15px;
+}
+
+.product-item button {
+  background-color: #ff6347;
+  color: #fff;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.product-item button:hover {
+  background-color: #ff4500;
+}
+
+/* Cart */
+.cart h2 {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+  color: #333;
+  font-weight: 600;
+}
+
+.cart-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  padding: 15px;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.2s ease;
+}
+
+.cart-item:hover {
+  background-color: #f1f1f1;
+}
+
+.cart-item button {
+  background-color: #ff6347;
+  color: #fff;
+  padding: 8px 12px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.cart-item button:hover {
+  background-color: #ff4500;
+}
+
+/* Cart Summary */
+.cart-summary {
+  margin-top: 30px;
+  background-color: #f8f8f8;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.cart-summary p {
+  display: flex;
+  justify-content: space-between;
+  font-size: 1.1rem;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.cart-summary .total {
+  font-weight: bold;
+  font-size: 1.2rem;
+  color: #ff6347;
+}
+
+.cart-summary button {
+  background-color: #32cd32;
+  color: #fff;
+  padding: 14px 20px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  width: 100%;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.cart-summary button:hover {
+  background-color: #28a745;
+}
